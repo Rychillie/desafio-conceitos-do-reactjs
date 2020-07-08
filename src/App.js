@@ -18,7 +18,7 @@ function App() {
 
       const response = await api.post('repositories', {
         url: "https://github.com/Rychillie/desafio-conceitos-do-reactjs",
-        title: "GoStack ReactJS",
+        title: "Desafio 03: Conceitos do React.js",
         techs: ["JavaScript", "ReactJS"]
       });
 

@@ -1,7 +1,7 @@
 <img alt="GoStack" src="https://storage.googleapis.com/golden-wind/bootcamp-gostack/header-desafios.png" />
 
 <h3 align="center">
-    Desafio 02: Conceitos do Node.js
+    Desafio 03: Conceitos do React.js
 </h3>
 
 <p align="center">
@@ -13,21 +13,22 @@
 
 # 🚀 Sobre o Desafio:
 
-Neste desafio eu apliquei um pouco dos conhecimentos de NodeJS que obtive no Bootcamp GoStack da RocketSeat para a criação de uma API no qual eu mostro os projetos criados ao longo do GoStack.
+Neste desafio eu apliquei um pouco dos conhecimentos de ReactJS que obtive no Bootcamp GoStack da RocketSeat para a criação de um Front End com ReactJS para [a minha aplicação anteriormente criada com NodeJS](https://github.com/Rychillie/desafio-conceitos-do-nodejs) no qual eu mostro os projetos criados ao longo do GoStack.
 
 Neste primeiro módulo algumas coisas que eu aprendi:
 
-- A criar um Server local com Node.JS;
-- O que são Middlewares;
-- Parametros de Requisição (Query, Route, Request body);
+- Como criar um projeto ReactJS;
+- Componentização;
+- Estados;
 
-# 🔧 Como testar a API criada:
+# 🔧 Como testar o Front End criado:
 
-- Clone este repositório no seu computador
+Primeito você tera que rodar o BackEnd da aplicação, para isso você deve seguir estes passos:
+- Clone [este repositório](https://github.com/Rychillie/desafio-conceitos-do-nodejs)(API/BackEnd do projeto) no seu computador
 - Com o projeto aberto você deve rodar os seguintes comandos em seu terminal para instalar as dependencias:
 
 ```shell
-    yarn / npm install
+    yarn install / npm install
 ```
 
 - Para iniciar a API você deve realizar o seguinte comando:
@@ -38,36 +39,26 @@ Neste primeiro módulo algumas coisas que eu aprendi:
 
 - Para realizar testes na API:
 ```shell
-    yarn jest / npm run jest
+    yarn test / npm run test
+```
+Agora que temos o BackEnd rodando vamos realizar a instalação do FrontEnd em ReactJS:
+- Clone este repositório no seu computador
+- Com o projeto aberto você deve rodar os seguintes comandos em seu terminal para instalar as dependencias:
+
+```shell
+    yarn install / npm install
 ```
 
-# 🛣️ Rotas para testar a API:
+- Para iniciar o FrontEnd você deve realizar o seguinte comando:
 
-- **`POST - /repositories`** : Cria um repositório. Para esta rota temos que utilizar as seguintes declarações:
-
-```json
-    {
-        "title": "Titulo do Repositório",
-        "url": "Link URL do Repositório",
-        "techs": ["Algumas", "Tecnologias", "Usadas"]
-    }
+```shell
+    yarn dev / npm run dev
 ```
 
-- **`GET - /repositories`** : Retorna todos os Repositórios.
-
-- **`PUT - /repositories/:id`** : Atualiza repositório. Esta rota necessita do ID do repositório que gostaria de alterar alem de utilizar as seguintes declarações:
-
-```json
-    {
-        "title": "repository title",
-        "url": "repository url",
-        "techs": ["repo", "techs"]
-    }
+- Para realizar testes no FrontEnd:
+```shell
+    yarn test / npm run test
 ```
-
-- **`DELETE - /repositories/:id`** : Deleta um repositório, Esta rota necessita do ID do repositório que gostaria de deletar.
-
-- **`POST - /repositories/:id/like`** : Cria um Like para o repositório. Esta rota necessita do ID do repositório que gostaria de deixar o Like.
 
 ---
 
